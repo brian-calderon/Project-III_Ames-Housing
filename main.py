@@ -80,28 +80,34 @@ print(num_feat.columns[num_feat.isna().any()]) #Print all colums that have NA va
 ##
 miss_numfeats = num_feat.isna().sum().sort_values(ascending = False)*(100/2580)
 miss_numfeats = miss_numfeats.round(1)
-fig, ax = plt.subplots()
-p2 = ax.bar(miss_numfeats.index[0:9], miss_numfeats[0:9]) # create a barplot
+
+fig, ax = plt.subplots(figsize=(8,6))
+bar_miss_numfeats = ax.bar(miss_numfeats.index[0:9], miss_numfeats[0:9]) # create a barplot
+# Adding labels and title
 ax.set_title('Top 10 num. feat. with missing values')
 ax.set_xlabel('Num. Feature')
-ax.bar_label(p2, miss_numfeats)
-# ax.get_xticks(): gets tick positions of current plot
-# ax.get_xticklabels(): gets tick labels of current plot
-ax.tick_params(axis = 'x', rotation=90)
-# ax.set_xticks(ax.get_xticks(), ax.get_xticklabels(), rotation=90, ha='right')
 ax.set_ylabel('% Missing')
-plt.show(block=True)
+ax.bar_label(bar_miss_numfeats)
+# Rotating x-axis labels
+ax.tick_params(axis='x', labelrotation=45)
+# Displaying the plot
+plt.tight_layout() # Adjust layout to prevent clipping
+plt.show()
 ##
 miss_catfeats = cat_feat.isna().sum().sort_values(ascending = False)*(100/2580)
 fig, ax = plt.subplots()
-p2 = ax.bar(miss_catfeats.index[0:9], miss_catfeats[0:9]) # create a barplot
+# create a barplot
+bar_miss_catfeats = ax.bar(miss_catfeats.index[0:9], miss_catfeats[0:9])
+# Adding labels and title
 ax.set_title('Top 10 cat. feat. with missing values')
 ax.set_xlabel('Num. Feature')
-# ax.get_xticks(): gets tick positions of current plot
-# ax.get_xticklabels(): gets tick labels of current plot
-ax.set_xticks(ax.get_xticks(), ax.get_xticklabels(), rotation=90, ha='right')
 ax.set_ylabel('% Missing')
-plt.show(block=True)
+ax.bar_label(bar_miss_catfeats,fmt='%.1f')
+# Rotating x-axis labels
+ax.tick_params(axis='x', labelrotation=45)
+# Displaying the plot
+plt.tight_layout() # Adjust layout to prevent clipping
+plt.show()
 
 ##
 # What data types do we have?
@@ -117,16 +123,22 @@ dfpp.isna().mean()>0
 print(dfpp.shape)
 dfpp.head()
 ##-------------------------Checking that no data is missing---------------------------------------------
+# We only need to check the numerical feats since the categorical ones are allready gauranteed
+# to be taken of with the dummifiication.
 miss_numfeats = dfpp.isna().sum().sort_values(ascending = False)*(100/2580)
 fig, ax = plt.subplots()
-p2 = ax.bar(miss_numfeats.index[0:9], miss_numfeats[0:9]) # create a barplot
+# create a barplot
+bar_num_feats = ax.bar(miss_numfeats.index[0:9], miss_numfeats[0:9])
+# Adding labels and title
 ax.set_title('Top 10 feat. with missing values')
 ax.set_xlabel('Feature')
-# ax.get_xticks(): gets tick positions of current plot
-# ax.get_xticklabels(): gets tick labels of current plot
-ax.set_xticks(ax.get_xticks(), ax.get_xticklabels(), rotation=90, ha='right')
 ax.set_ylabel('% Missing')
-plt.show(block=True)
+ax.bar_label(bar_num_feats)
+# Rotating x-axis labels
+ax.tick_params(axis='x', labelrotation=45)
+# Displaying the plot
+plt.tight_layout() # Adjust layout to prevent clipping
+plt.show()
 ##
 # Split into train and test datasets
 x_train, x_test, y_train, y_test = train_test_split(dfpp.drop(columns = 'SalePrice'), dfpp['SalePrice'], test_size=0.4, random_state=0)
@@ -372,10 +384,11 @@ plt.show(block=True)
 ##
 from sklearn.ensemble import GradientBoostingRegressor
 GB = GradientBoostingRegressor
+results = [] # Initializing array
 # You sould only have five entries from MLR vanilla+Lasso+Ridge+Elasic+RF
 # up to this point this ensures that, so that when you run this chunk
 # multiple times you don't continously append values
-results = results[0:10]
+# results = results[0:10] # commenting for the webapp dev, uncomment if you want to run entire program as was intended
 # learning_rate = Learning rate shrinks the contribution of each tree
 # by learning_rate. There is a trade-off between learning_rate and n_estimators.
 # n_estimators: # trees in forest
@@ -383,7 +396,9 @@ results = results[0:10]
 # If smaller than 1.0 this results in Stochastic Gradient Boosting.
 # Subsample interacts with the parameter n_estimators. Choosing subsample < 1.0 leads to
 # a reduction of variance and an increase in bias.
-gbGrid = {'random_state': [0], 'learning_rate': np.linspace(0,1,11), 'n_estimators': range(100,300,25), 'subsample': np.linspace(0,1,11)}
+# np.linspace(0.05,1,11)
+gbGrid = {'random_state': [0], 'learning_rate': np.linspace(0.05,1,11),
+          'n_estimators': range(100,300,25), 'subsample': np.linspace(0.05,1,11)}
 # CV = Kfold cross validation. This says how many subgroups to divide up your test data
 gbCV = GridSearchCV(GB(), gbGrid, cv = 2, return_train_score = True, n_jobs = 4)
 GB_Train = gbCV.fit(x_train,y_train)
