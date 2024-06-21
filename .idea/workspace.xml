@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9ecaaa-4648-40fb-bf32-3dba5b734686" name="Changes" comment="restructuring for web app">
-      <change afterPath="$PROJECT_DIR$/12-01-22_Pitch.pptx" afterDir="false" />
+    <list default="true" id="5e9ecaaa-4648-40fb-bf32-3dba5b734686" name="Changes" comment="adding files to .gitignore">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scratches/GB_Model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Scratches/Scratch.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -157,7 +159,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719012324400</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="adding .gitignore">
+      <option name="closed" value="true" />
+      <created>1719013001635</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1719013001635</updated>
+    </task>
+    <task id="LOCAL-00007" summary="adding files to .gitignore">
+      <option name="closed" value="true" />
+      <created>1719013139596</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1719013139596</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -180,7 +198,9 @@
     <MESSAGE value="read me update" />
     <MESSAGE value="second commit" />
     <MESSAGE value="restructuring for web app" />
-    <option name="LAST_COMMIT_MESSAGE" value="restructuring for web app" />
+    <MESSAGE value="adding .gitignore" />
+    <MESSAGE value="adding files to .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding files to .gitignore" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
