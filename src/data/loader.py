@@ -1,11 +1,7 @@
 import pandas as pd
 from typing import Callable
 from functools import partial, reduce
-# import babel.dates
-import datetime as dt
-# import i18n
-# Defining the type of function that Preprocessor is, it takes a pd.df as input
-# and returns a pd.df as output.
+
 Preprocessor = Callable[[pd.DataFrame], pd.DataFrame]
 
 class DataSchema:

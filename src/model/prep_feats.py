@@ -1,5 +1,7 @@
 import pandas as pd
 
+# takes input dict and converts to a df with columns ordered as
+# for the model to predict.
 def prep_feats(input_feats: dict) -> pd.DataFrame:
     ordered_feats = [{
         'OverallQual': input_feats['OverallQual'],

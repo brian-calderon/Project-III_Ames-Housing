@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9ecaaa-4648-40fb-bf32-3dba5b734686" name="Changes" comment="adding files to .gitignore">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scratches/GB_Model.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Scratches/Scratch.py" beforeDir="false" />
+    <list default="true" id="5e9ecaaa-4648-40fb-bf32-3dba5b734686" name="Changes" comment="removing ppt">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,7 +174,31 @@
       <option name="project" value="LOCAL" />
       <updated>1719013139596</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="removing files">
+      <option name="closed" value="true" />
+      <created>1719013488153</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1719013488153</updated>
+    </task>
+    <task id="LOCAL-00009" summary="removing jupyter notebooks">
+      <option name="closed" value="true" />
+      <created>1719013549087</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1719013549087</updated>
+    </task>
+    <task id="LOCAL-00010" summary="removing ppt">
+      <option name="closed" value="true" />
+      <created>1719013602654</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1719013602654</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -200,7 +223,10 @@
     <MESSAGE value="restructuring for web app" />
     <MESSAGE value="adding .gitignore" />
     <MESSAGE value="adding files to .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding files to .gitignore" />
+    <MESSAGE value="removing files" />
+    <MESSAGE value="removing jupyter notebooks" />
+    <MESSAGE value="removing ppt" />
+    <option name="LAST_COMMIT_MESSAGE" value="removing ppt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

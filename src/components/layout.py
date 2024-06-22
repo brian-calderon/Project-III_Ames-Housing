@@ -1,9 +1,7 @@
 from dash import Dash, html
-import pandas as pd
 
-# from . import *
-from src.components import  overall_quality_dropdown, year_built_dropdown, basement_finished_input,\
-                            basement_input,garage_area_input, general_living_area_input,\
+from src.components import overall_quality_dropdown, year_built_dropdown, basement_finished_input, \
+                            basement_input, garage_area_input, general_living_area_input, \
                             run_model_button, results_output
 def create_layout(app: Dash) -> html.Div:
     return html.Div(
