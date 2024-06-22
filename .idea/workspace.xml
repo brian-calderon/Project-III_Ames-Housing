@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9ecaaa-4648-40fb-bf32-3dba5b734686" name="Changes" comment="updating requirements.txt" />
+    <list default="true" id="5e9ecaaa-4648-40fb-bf32-3dba5b734686" name="Changes" comment="removing clearport.py" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -219,7 +219,15 @@
       <option name="project" value="LOCAL" />
       <updated>1719016143900</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="removing clearport.py">
+      <option name="closed" value="true" />
+      <created>1719016485936</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1719016485936</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -250,7 +258,8 @@
     <MESSAGE value="preping for render" />
     <MESSAGE value="adding requirements.txt" />
     <MESSAGE value="updating requirements.txt" />
-    <option name="LAST_COMMIT_MESSAGE" value="updating requirements.txt" />
+    <MESSAGE value="removing clearport.py" />
+    <option name="LAST_COMMIT_MESSAGE" value="removing clearport.py" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

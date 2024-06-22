@@ -3,9 +3,9 @@ from dash import Dash, html
 import dash_bootstrap_components as dbc
 
 from src.components.layout import create_layout
-from src.clear_port import clear_port
-from src.data.loader import load_transaction_data
-from src.data.source import DataSource
+# from src.clear_port import clear_port
+# from src.data.loader import load_transaction_data
+# from src.data.source import DataSource
 ## Globals
 
 ## Code
@@ -20,7 +20,7 @@ app.layout = create_layout(app)
 # Clears any zombie process' on that port
 # clear_port(port)
 # Runs the app on the port
-app.run_server(host='0.0.0.0',debug=True)
+app.run_server(host='0.0.0.0', debug=True)
 
 # if __name__ == "__main__":
 #     main()
