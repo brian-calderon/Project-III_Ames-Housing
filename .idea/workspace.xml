@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5e9ecaaa-4648-40fb-bf32-3dba5b734686" name="Changes" comment="preping for render" />
+    <list default="true" id="5e9ecaaa-4648-40fb-bf32-3dba5b734686" name="Changes" comment="updating requirements.txt" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -45,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "ignore.virus.scanning.warn.message": "true",
     "last_opened_file_path": "C:/Users/brian/OneDrive/Documents/Academics/Courses/NYC Bootcamp Machine Learning/Projects/Project-III (Ames Housing)",
-    "settings.editor.selected.configurable": "PyConsoleConfigurable.Python Console"
+    "settings.editor.selected.configurable": "com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable"
   },
   "keyToStringList": {
     "com.intellij.ide.scratch.ScratchImplUtil$2/New Scratch File": [
@@ -203,7 +203,23 @@
       <option name="project" value="LOCAL" />
       <updated>1719015318563</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="adding requirements.txt">
+      <option name="closed" value="true" />
+      <created>1719015367591</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1719015367591</updated>
+    </task>
+    <task id="LOCAL-00013" summary="updating requirements.txt">
+      <option name="closed" value="true" />
+      <created>1719016143900</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1719016143900</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -232,7 +248,9 @@
     <MESSAGE value="removing jupyter notebooks" />
     <MESSAGE value="removing ppt" />
     <MESSAGE value="preping for render" />
-    <option name="LAST_COMMIT_MESSAGE" value="preping for render" />
+    <MESSAGE value="adding requirements.txt" />
+    <MESSAGE value="updating requirements.txt" />
+    <option name="LAST_COMMIT_MESSAGE" value="updating requirements.txt" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
